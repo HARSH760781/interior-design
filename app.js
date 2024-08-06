@@ -16,7 +16,18 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.render("index");
 });
-
+app.get("/about", (req, res) => {
+  res.render("About");
+});
+app.get("/Contact", (req, res) => {
+  res.render("contact");
+});
+app.get("/Service", (req, res) => {
+  res.render("Service");
+});
+app.get("/Pages", (req, res) => {
+  res.render("Page");
+});
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
 });
