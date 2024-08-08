@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    height: 15vh;
+   }
+   header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+   }
+   header ul li{
+    list-style: none;
+    margin: 25px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+   }
+   header ul li a{
+    text-decoration: none;
+    color: #000;
+    }
+   header ul li:hover{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+    }
+  .menu-icon{
+    display: none;
+    margin: 10px;
+  }
+    .logo{
+      width: 35%;
+    }
+   .logo img {
+    max-height: 100px;
+    width: auto;
+  }
+   .logo img:hover , header ul li:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    }
+  
+  
+    @media (max-width: 780px) {
+      .menu{
+        display: flex;
+        align-items: center;
+      }
+      .menu ul {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 0px;
+          right: 20px;
+          height: auto;
+          background-color: #f8f9fa;
+          width: 90%;
+          border: 1px solid #dee2e6;
+          border-radius: 5px;
+      }
+    
+      .menu ul li {
+          text-align: right;
+          display: flex;
+          margin: 10%;
+
+      }
+    
+      .menu-icon {
+          display: block;
+          font-size: 40px;
+          z-index: 1; 
+
+        }
+    
+    } 
+
+
+    .footer-container {
+      background-color: #9c7575;
+      padding: 20px;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .footer-left {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+    
+    .footer-left-left {
+      flex: 1 1 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .footer-logo {
+      max-width: 150px;
+      transition: transform 0.3s ease;
+    }
+    
+    .footer-logo:hover {
+      transform: scale(1.1);
+    }
+    
+    .contact-info,
+    .company-info,
+    .services-info {
+      flex: 1 1 200px;
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+    footer h2, footer  h3 {
+      margin-bottom: 10px;
+      font-size: 30px;
+      position: relative;
+      overflow: hidden;
+      color: black;
+      
+    }
+    
+    footer h2::after,footer  h3::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.5s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    
+    footer h2:hover::after, footer h3:hover::after {
+      width: 100%;
+    }
+    /* .contact-info h2{
+      text-align: center;
+      font-size: 30px;
+    } */
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    footer ul li {
+      margin-bottom: 5px;
+    }
+    
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer .contact-info p a{
+      color: white;
+    }
+    
+    footer ul li a:hover {
+      color: #ff6347; /* Tomato color for hover effect */
+    }
+    
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .footer-left-left {
+          flex: 1 1 100%;
+          text-align: center;
+      }
+    
+      .contact-info,
+      .company-info,
+      .services-info {
+          flex: 1 1 100%;
+          text-align: center;
+          margin: 10px 0;
+    
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .footer-logo {
+          max-width: 120px;
+      }
+      .get_started{
+        margin: 10% auto;
+      }
+    
+      h2, h3 {
+          font-size: 16px;
+      }
+    }
+    
+    /* Footer Animations */
+    .footer-container {
+      animation: fadeInUp 1s ease-in-out;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+          transform: translateY(50px);
+          opacity: 0;
+      }
+      to {
+          transform: translateY(0);
+          opacity: 1;
+      }
+    }
+
+    
+  .sample_img{
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+    margin: 5%;
+    text-align: center;
+  }
+  .imgs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgs img{
+    width: 70%;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+  }
+  .imgs img:hover{
+    transform: scale(1.1);
+  }
+  .imgs p{
+    margin: 5% auto;
+    font-size: large;
+  }
+  

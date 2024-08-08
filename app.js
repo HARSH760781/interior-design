@@ -25,6 +25,12 @@ app.get("/Contact", (req, res) => {
 app.get("/Service", (req, res) => {
   res.render("Service");
 });
+app.get("/kitchen", (req, res) => {
+  res.render("kitchen");
+});
+app.get("/interior-desing", (req, res) => {
+  res.render("interior-design");
+});
 app.get("/Pages", (req, res) => {
   res.render("Page");
 });

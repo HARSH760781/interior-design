@@ -23,3 +23,15 @@ document.querySelectorAll(".faq-question").forEach((item) => {
     }
   });
 });
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu ul");
+  const menu_icon = document.querySelector(".menu-icon");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+    menu_icon.innerHTML = "&#9776;";
+  } else {
+    menu_icon.innerHTML = "X";
+    menu.style.display = "block";
+  }
+}
