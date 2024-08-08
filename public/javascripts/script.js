@@ -31,7 +31,7 @@ function toggleMenu() {
     menu.style.display = "none";
     menu_icon.innerHTML = "&#9776;";
   } else {
-    menu_icon.innerHTML = "X";
+    menu_icon.innerHTML = "&#10006";
     menu.style.display = "block";
   }
 }
