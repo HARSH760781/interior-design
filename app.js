@@ -28,6 +28,27 @@ app.get("/Service", (req, res) => {
 app.get("/kitchen", (req, res) => {
   res.render("kitchen");
 });
+app.get("/electric-work", (req, res) => {
+  res.render("electric-work");
+});
+app.get("/plumbing", (req, res) => {
+  res.render("plumbing");
+});
+app.get("/gypsum-ceiling", (req, res) => {
+  res.render("gypsum-ceiling");
+});
+app.get("/painting", (req, res) => {
+  res.render("painting");
+});
+app.get("/flloring", (req, res) => {
+  res.render("flooring");
+});
+app.get("/curtains", (req, res) => {
+  res.render("curtains");
+});
+app.get("/electronic-products", (req, res) => {
+  res.render("electronic-products");
+});
 app.get("/interior-desing", (req, res) => {
   res.render("interior-design");
 });
