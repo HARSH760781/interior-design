@@ -49,6 +49,9 @@ main {
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
+.animated li{
+    list-style: none;
+}
 
 .team {
     display: flex;

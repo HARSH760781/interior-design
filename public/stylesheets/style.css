@@ -219,7 +219,7 @@
 
 
 .service{
-  width: 80%;
+  width: 100%;
   /* background: green; */
   margin: auto;
 }
@@ -300,6 +300,9 @@
 .above_exp p{
   color: red;
 }
+.animated li{
+  list-style: none;
+}
 .experience {
   width: 80%;
   margin: 5% auto;
@@ -309,10 +312,11 @@
 }
 .experience-content{
   flex: 5;
-  font-size: 30px;
+  font-size: 20px;
 }
 .experience-result{
   flex:5;
+  font-size: 20px;
 }
 .above_exp .elementor-divider-separator{
   display: flex;
@@ -669,6 +673,7 @@ footer ul li a:hover {
   padding: 5rem 1rem;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .hero-content {
