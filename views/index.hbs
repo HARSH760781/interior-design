@@ -2,144 +2,291 @@
 <main>
     <div class="main_content">
         <div class="main_bg">
-            <img src="/images/main_bg.webp" alt="">
-        </div>
-        <div class="content">
-            <p>The Comfort Of Your Place Starts From Here</p>
-            <br>
-            <br>
-            <h3 style="color: white;">Looking for the best interior designer in your Area ? At Decor
-                24x7, we
-                specialize in <br>
-                transforming houses into dream homes with our comprehensive home interior design services</h3>
+            <img src="/images/main_bg.webp" alt="" class="fade-in-image">
 
-            <button class="get_started">Get Started</button>
+        </div>
+
+        <div class="content">
+            <p class="slide-in-text">The Comfort Of Your Place Starts From Here</p>
+            {{!--
+            <h3 class="fade-in-text" style="color: white;">Looking for the best interior designer in your Area? At Decor
+                24x7, we specialize in <br>
+                transforming houses into dream homes with our comprehensive home interior design services
+            </h3> --}}
+
+            <button class="get_started bounce-in-button">Get Started</button>
         </div>
     </div>
 
+
     <div class="main_2_h1">
-        <marquee behavior="alternate" direction="right">
-            <p><span>✈️</span>Decor gives you more than your exprectation <span>✈️</span></p>
+        <marquee behavior="alternate" direction="right" class="marquee-animation">
+            <p><span>✈️</span>Designs that Turn Your Dreams into Stunning Realities.<span>✈️</span></p>
         </marquee>
 
         <div class="main_2">
-            <img src="/images/interior-modern-design-room-3d.jpg" alt="">
-            <div class="notice">
-                <p>Experience the comfort of a personalized home with the best home interior designer in Uttar Pradesh.
-                    Our best interior designers in Uttar Pradesh are here to help you bring your design dream homes to
-                    reality within your budget.</p>
+            <div class="slider-wrapper">
+                <div class="slider-images">
+                    <img src="/images/kitchen_interior.jpg" alt="" class="zoom-in-image">
+                    <img src="/images/living.jpeg" alt="" class="zoom-in-image">
+                    <img src="/images/bathroom_interior.jpeg" alt="" class="zoom-in-image">
+                    <img src="/images/Bedroom-Interior-Design.jpg" alt="" class="zoom-in-image">
+                </div>
+            </div>
+        </div>
 
-                <li>Personalized designs</li>
-                <li>15+ years of warranty.</li>
-                <li>45 days Installations.</li>
-                <li>1000+ completed projects.</li>
+    </div>
 
-                <button class="get_started">About Us</button>
+    <div class="design_gallery">
+        <h1>Design Gallery</h1>
+        <p>If you;re on the look out for simple home interior designs, look no further than HomeLane for end-to-end
+            interior design services.</p>
+        <div class="gallery_cards">
+            <div class="gallery_card">
+                <div class="gallery_card_left">
+                    <img src="/images/kitchen/2.jpg" alt="">
+                    <h3>Modular Kitchen</h3>
+                </div>
+                <div class="gallery_card_left">
+                    <img src="/images/gypsum/7.jpg" alt="">
+                    <h3>Gypsum Ceiling</h3>
+                </div>
+            </div>
+            <div class="gallery_card">
+                <div class="gallery_card_left">
+                    <img src="/images/living-room/3.jpg" alt="">
+                    <h3>Living Room</h3>
+                </div>
+                <div class="gallery_card_left">
+                    <img src="/images/interior-design/7.avif" alt="">
+                    <h3> Interior Design</h3>
+                </div>
+            </div>
+            <div class="gallery_card">
+                <div class="gallery_card_left">
+                    <img src="/images/living-room/2.jpeg" alt="">
+                    <h3> Living Room</h3>
+                </div>
+                <div class="gallery_card_left">
+                    <img src="/images/painting/9.jpeg" alt="">
+                    <h3>Painting</h3>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="main_service">
-        <p>Our Services</p>
-        <h1>The best designs start from here</h1>
-
-        <div class="elementor-divider-separator">
+        <p class="fade-in">Our Services</p>
+        <h1 class="fade-in-delay">The best designs start from here</h1>
+        <div class="elementor-divider-separator slide-in-divider">
             <div class="elementor-divider-separator-line"></div>
         </div>
+        <button class="service_btn"><a href="/Service">See all</a></button>
 
         <div class="service">
-            <div class="cards">
-                <div class="card">
-                    <img src="/images/icons/interior-design.png" alt=""><br><br>
-                    <h2>Interior Design</h2><br><br>
-                    <button class="btn"><a href="/interior-desing">View Samples</a></button>
-                    <p>Transform your home into a haven of elegance and comfort with our expert interior design
-                        services.
-
+            <div class="seperate_service">
+                <h2>Interior Designes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel officia porro culpa unde soluta
+                    velit optio veniam odit architecto.</p>
+                <div class="service_slider">
+                    <button class="prev">&larr;</button>
+                    <div class="service_images">
+                        <img src="/images/interior-design/1.jpg" alt="">
+                        <img src="/images/interior-design/2.jpg" alt="">
+                        <img src="/images/interior-design/3.jpg" alt="">
+                        <img src="/images/interior-design/5.webp" alt="">
+                        <img src="/images/interior-design/6.webp" alt="">
+                        <img src="/images/interior-design/7.avif" alt="">
+                    </div>
+                    <button class="next">&rarr;</button>
                 </div>
-                <div class="card">
-                    <img src="/images/icons/kitchen.png" alt=""><br><br>
-                    <h2>Modular Kitchen</h2><br><br>
-                    <button class="btn"><a href="/kitchen">View Samples</a></button>
-                    <p>Experience the perfect blend of style and utility with our custom-designed modular kitchens.
-
-                </div>
-                <div class="card">
-                    <img src="/images/icons/electrician.png" alt=""><br><br>
-                    <h2>Electric Work</h2><br><br>
-                    <button class="btn"><a href="/electric-work">View Samples</a></button>
-                    <p>Power your home with precision and safety through our expert electrical services.
-
-                </div>
+                <div class="pagination"></div>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="/images/icons/drainage.png" alt=""><br><br>
-                    <h2> Plumbing </h2><br><br>
-                    <button class="btn"><a href="/plumbing">View Samples</a></button>
-                    <p>Ensure a leak-free and efficient home with our expert plumbing solutions.
 
+            <div class="seperate_service">
+                <h2>Modular Kitchen</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel officia porro culpa unde soluta
+                    velit optio veniam odit architecto.</p>
+                <div class="service_slider">
+                    <button class="prev">&larr;</button>
+                    <div class="service_images">
+                        <img src="/images/kitchen/1.jpg" alt="">
+                        <img src="/images/kitchen/2.jpg" alt="">
+                        <img src="/images/kitchen/3.jpg" alt="">
+                        <img src="/images/kitchen/4.jpg" alt="">
+                        <img src="/images/kitchen/5.webp" alt="">
+                        <img src="/images/kitchen/6.jpg" alt="">
+                        <img src="/images/kitchen/7.avif" alt="">
+                        <img src="/images/kitchen/8.avif" alt="">
+                        <img src="/images/kitchen/9.webp" alt="">
+                    </div>
+                    <button class="next">&rarr;</button>
                 </div>
-                <div class="card">
-                    <img src="/images/icons/Gypsum-board.png" alt=""><br><br>
-                    <h2>Gypsum false Ceiling</h2><br><br>
-                    <button class="btn"><a href="/gypsum-ceiling">View Samples</a></button>
-                    <p>Elevate your interiors with our sleek and modern Gypsum false ceilings.
-
-                </div>
-                <div class="card">
-                    <img src="/images/icons/paint-roller.png" alt=""><br><br>
-                    <h2>Painting</h2><br><br>
-                    <button class="btn"><a href="/painting">View Samples</a></button>
-                    <p>Revitalize your space with vibrant colors and expert painting services</p>
-
-                </div>
+                <div class="pagination"></div>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="/images/icons/tiles.png" alt=""><br><br>
-                    <h2>Flooring</h2><br><br>
-                    <button class="btn"><a href="/flooring">View Samples</a></button>
-
-                    <p>Step into luxury with our premium flooring solutions that combine style and durability.</p>
-                    <br>
+            <div class="seperate_service">
+                <h2>Gypsum Ceiling </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel officia porro culpa unde soluta
+                    velit optio veniam odit architecto.</p>
+                <div class="service_slider">
+                    <button class="prev">&larr;</button>
+                    <div class="service_images">
+                        <img src="/images/gypsum/1.jpg" alt="">
+                        <img src="/images/gypsum/2.jpeg" alt="">
+                        <img src="/images/gypsum/3.jpeg" alt="">
+                        <img src="/images/gypsum/4.jpeg" alt="">
+                        <img src="/images/gypsum/5.jpeg" alt="">
+                        <img src="/images/gypsum/6.jpg" alt="">
+                        <img src="/images/gypsum/7.jpg" alt="">
+                        <img src="/images/gypsum/8.webp" alt="">
+                    </div>
+                    <button class="next">&rarr;</button>
                 </div>
-                <div class="card">
-                    <img src="/images/icons/curtains.png" alt=""><br><br>
-                    <h2>Curtains</h2><br><br>
-                    <button class="btn"><a href="/curtains">View Samples</a></button>
-                    <p>Add a touch of elegance to your home with our custom-designed curtains</p>
-
+                <div class="pagination"></div>
+            </div>
+            <div class="seperate_service">
+                <h2>Living Rooms</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel officia porro culpa unde soluta
+                    velit optio veniam odit architecto.</p>
+                <div class="service_slider">
+                    <button class="prev">&larr;</button>
+                    <div class="service_images">
+                        <img src="/images/living-room/1.jpg" alt="">
+                        <img src="/images/living-room/2.jpeg" alt="">
+                        <img src="/images/living-room/3.jpg" alt="">
+                        <img src="/images/living-room/4.jpeg" alt="">
+                        <img src="/images/living-room/5.jpg" alt="">
+                        <img src="/images/living-room/5.jpg" alt="">
+                        <img src="/images/living-room/6.jpg" alt="">
+                    </div>
+                    <button class="next">&rarr;</button>
                 </div>
-                <div class="card">
-                    <img src="/images/icons/computer.png" alt=""><br><br>
-                    <h2>Electronic Products</h2><br><br>
-                    <button class="btn"><a href="electronic-products">View Samples</a></button>
-                    <p>Experience the future of technology with our innovative electronic solutions.</p>
-
+                <div class="pagination"></div>
+            </div>
+            <div class="seperate_service">
+                <h2>Modular Kitchen</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel officia porro culpa unde soluta
+                    velit optio veniam odit architecto.</p>
+                <div class="service_slider">
+                    <button class="prev">&larr;</button>
+                    <div class="service_images">
+                        <img src="/images/painting/1.jpeg" alt="">
+                        <img src="/images/painting/2.jpg" alt="">
+                        <img src="/images/painting/3.jpg" alt="">
+                        <img src="/images/painting/4.jpg" alt="">
+                        <img src="/images/painting/5.jpg" alt="">
+                        <img src="/images/painting/6.jpg" alt="">
+                        <img src="/images/painting/7.jpg" alt="">
+                        <img src="/images/painting/9.jpeg" alt="">
+                        <img src="/images/painting/10.jpg" alt="">
+                    </div>
+                    <button class="next">&rarr;</button>
                 </div>
+                <div class="pagination"></div>
+            </div>
+            {{!-- <div class="seperate_service">
+                <h2>Modular Kitchen</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel officia porro culpa unde soluta
+                    velit optio veniam odit architecto.</p>
+                <div class="service_slider">
+                    <button class="prev">&larr;</button>
+                    <div class="service_images">
+                        <img src="/images/kitchen/1.jpg" alt="">
+                        <img src="/images/kitchen/2.jpg" alt="">
+                        <img src="/images/kitchen/3.jpg" alt="">
+                        <img src="/images/kitchen/4.jpg" alt="">
+                        <img src="/images/kitchen/5.webp" alt="">
+                    </div>
+                    <button class="next">&rarr;</button>
+                </div>
+                <div class="pagination"></div>
+            </div> --}}
+        </div>
+
+        {{!-- <div class="cards">
+            <div class="card fade-up">
+                <img src="/images/icons/interior-design.png" alt=""><br><br>
+                <h2>Interior Design</h2><br><br>
+                <button class="btn bounce-button"><a href="/interior-desing">View Samples</a></button>
+                <p>Transform your home into a haven of elegance and comfort with our expert interior design
+                    services.
+            </div>
+            <div class="card fade-up">
+                <img src="/images/icons/kitchen.png" alt=""><br><br>
+                <h2>Modular Kitchen</h2><br><br>
+                <button class="btn bounce-button"><a href="/kitchen">View Samples</a></button>
+                <p>Experience the perfect blend of style and utility with our custom-designed modular kitchens.
+            </div>
+            <div class="card fade-up">
+                <img src="/images/icons/electrician.png" alt=""><br><br>
+                <h2>Electric Work</h2><br><br>
+                <button class="btn bounce-button"><a href="/electric-work">View Samples</a></button>
+                <p>Power your home with precision and safety through our expert electrical services.
             </div>
         </div>
+        <div class="cards">
+            <div class="card fade-up">
+                <img src="/images/icons/drainage.png" alt=""><br><br>
+                <h2>Plumbing</h2><br><br>
+                <button class="btn bounce-button"><a href="/plumbing">View Samples</a></button>
+                <p>Ensure a leak-free and efficient home with our expert plumbing solutions.
+            </div>
+            <div class="card fade-up">
+                <img src="/images/icons/Gypsum-board.png" alt=""><br><br>
+                <h2>Gypsum false Ceiling</h2><br><br>
+                <button class="btn bounce-button"><a href="/gypsum-ceiling">View Samples</a></button>
+                <p>Elevate your interiors with our sleek and modern Gypsum false ceilings.
+            </div>
+            <div class="card fade-up">
+                <img src="/images/icons/paint-roller.png" alt=""><br><br>
+                <h2>Painting</h2><br><br>
+                <button class="btn bounce-button"><a href="/painting">View Samples</a></button>
+                <p>Revitalize your space with vibrant colors and expert painting services</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card fade-up">
+                <img src="/images/icons/tiles.png" alt=""><br><br>
+                <h2>Flooring</h2><br><br>
+                <button class="btn bounce-button"><a href="/flooring">View Samples</a></button>
+                <p>Step into luxury with our premium flooring solutions that combine style and durability.</p>
+            </div>
+            <div class="card fade-up">
+                <img src="/images/icons/curtains.png" alt=""><br><br>
+                <h2>Curtains</h2><br><br>
+                <button class="btn bounce-button"><a href="/curtains">View Samples</a></button>
+                <p>Add a touch of elegance to your home with our custom-designed curtains</p>
+            </div>
+            <div class="card fade-up">
+                <img src="/images/icons/computer.png" alt=""><br><br>
+                <h2>Electronic Products</h2><br><br>
+                <button class="btn bounce-button"><a href="electronic-products">View Samples</a></button>
+                <p>Experience the future of technology with our innovative electronic solutions.</p>
+            </div>
+        </div> --}}
+        {{!--
+    </div> --}}
     </div>
-    <div class="portfolio">
+
+    <div class="portfolio fade-in">
         <p>Our Portfolio</p>
-        <h1>Recent Projects</h1>
-        <div class="elementor-divider-separator">
+        <h1 class="fade-in-delay">Recent Projects</h1>
+        <div class="elementor-divider-separator slide-in-divider">
             <div class="elementor-divider-separator-line"></div>
         </div>
 
         <div class="imgs">
-            <div class="img">
+            <div class="img fade-up">
                 <img src="/images/project_1.webp" alt="">
                 <img src="/images/project_2.webp" alt="">
             </div>
-            <div class="img">
+            <div class="img fade-up">
                 <img src="/images/project_3.webp" alt="">
                 <img src="/images/project_4.webp" alt="">
             </div>
         </div>
-
     </div>
+
     <div class="above_exp">
 
         <p>Our Experience</p>

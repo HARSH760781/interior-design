@@ -3,6 +3,344 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Fade-in animation for the image */
+.fade-in-image {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Slide-in animation for the text */
+.slide-in-text {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Fade-in animation for the H3 text */
+.fade-in-text {
+  opacity: 0;
+  animation: fadeInText 2.5s ease-in-out forwards;
+}
+
+@keyframes fadeInText {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Bounce-in animation for the button */
+.bounce-in-button {
+  opacity: 1;
+  animation: bounceIn 3s ease-in-out forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.3);
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.05);
+  }
+  70% {
+      transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+/* Marquee text color transition */
+.marquee-animation p {
+  color: #000; /* Initial color */
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+      color: #000;
+  }
+  50% {
+      color: #FF6347; /* Tomato color */
+  }
+  100% {
+      color: #000;
+  }
+}
+
+/* Zoom-in animation for the image */
+.zoom-in-image {
+  transform: scale(0.95);
+  transition: transform 2s ease-in-out;
+}
+
+.zoom-in-image:hover {
+  transform: scale(1.05);
+}
+
+/* Fade-in animation for the notice text and list items */
+.fade-in-notice {
+  opacity: 0;
+  animation: fadeInNotice 2s ease-in-out forwards;
+}
+
+@keyframes fadeInNotice {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Bounce-in animation for the button */
+.bounce-in-button {
+  opacity: 0;
+  animation: bounceIn 3s ease-in-out forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.3);
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.05);
+  }
+  70% {
+      transform: scale(0.9);
+  }
+  100% {
+      opacity: 2;
+      transform: scale(0.8);
+  }
+}
+
+/* Fade-in animation for the text */
+.fade-in-text {
+  opacity: 0;
+  animation: fadeInText 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInText {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Fade-in animation for the text */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Slide-in animation for the divider line */
+.slide-in-divider .elementor-divider-separator-line {
+  width: 0;
+  animation: slideInDivider 2s ease-in-out forwards;
+}
+
+@keyframes slideInDivider {
+  0% {
+      width: 90%;
+  }
+  100% {
+      width: 10%;
+  }
+}
+
+/* Fade-up animation for the cards */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Bounce animation for buttons */
+.bounce-button {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bounce-button:hover {
+  transform: scale(1.1);
+}
+/* Reuse the fade-in animation for the text */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Reuse the slide-in animation for the divider line */
+.slide-in-divider .elementor-divider-separator-line {
+  width: 0;
+  animation: slideInDivider 2s ease-in-out forwards;
+}
+
+@keyframes slideInDivider {
+  0% {
+      width: 50%;
+  }
+  100% {
+      width: 10%;
+  }
+}
+
+/* Reuse the fade-up animation for the images */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* General Animation Styles */
+.fade-in, .fade-in-delay, .fade-up, .slide-in-divider, .bounce-button {
+  opacity: 0;
+  transform: translateY(50px); /* Slide up effect */
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.fade-in-delay {
+  transition-delay: 0.3s;
+}
+
+.bounce-button {
+  transform: scale(0.9);
+}
+
+.in-view.fade-in, .in-view.fade-in-delay, .in-view.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.in-view.slide-in-divider {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.in-view.bounce-button {
+  transform: scale(1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* General Animation Styles */
+.marquee-animation {
+    opacity: 0;
+    transform: translateX(-50px); /* Slide in effect from left */
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.zoom-in-image {
+    opacity: 0;
+    transform: scale(0.9); /* Zoom-in effect */
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.fade-in-notice, .fade-in-text {
+    opacity: 0;
+    transform: translateY(20px); /* Slide up effect */
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.bounce-in-button {
+    transform: scale(0.9);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.in-view.marquee-animation, .in-view.zoom-in-image, .in-view.fade-in-notice, .in-view.fade-in-text, .in-view.bounce-in-button {
+    opacity: 1;
+    transform: translateX(90); /* Reset transform */
+}
+
+.in-view.zoom-in-image {
+    transform: scale(1);
+}
+
+.in-view.bounce-in-button {
+    transform: scale(1);
+}
+
+
  header{
   display: flex;
   justify-content: space-between;
@@ -43,6 +381,66 @@
   height: auto;
  }
  */
+
+ /* Initial style for the menu */
+/* Initial style for the menu */
+/* .menu ul {
+  display: none;
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+} */
+
+/* Style when the menu is visible */
+.menu ul.show {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Style for the menu items */
+.menu ul li {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Stagger the animation for each menu item */
+.menu ul li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.menu ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.menu ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.menu ul li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Define the slide-in animation */
+@keyframes slideIn {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Style for the menu icon */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Style for the close icon */
+.menu-icon.close {
+  color: #f00;
+  margin: 15px; /* Adjust the close icon color as needed */
+}
+
+
  .logo img {
   max-height: 100px;
   width: auto;
@@ -93,18 +491,23 @@
 .main_content{
   position: relative;
 }
+.main_bg {
+  height: 45rem;
+}
   .main_bg img{
     width: 100%;
     opacity: 0.9;
-    height: 80vh;
+    height: 80%;
     margin-bottom: 30px;  
   }
+  
 
   .content{
     position: absolute;
     top: 5%;
     left:25%;
     right: 10%;
+    height: 30%;
     }
     .content p{
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -120,7 +523,7 @@
     padding: 10px;
     background: #f46262;
     border-radius: 10px;
-    margin: 30px;
+    margin: 5% auto;
     color: white;
     }
     .get_started:hover{
@@ -132,6 +535,8 @@
 .main_2_h1{
   width: 70%;
   margin: auto;
+  /* display: flex;
+  flex: 50%; */
 }
 .main_2_h1 p{
   font-size: 35px;
@@ -141,14 +546,141 @@
 }
 .main_2{
   position: relative;
-  width: 70%;
+  width: 100%;
+  text-align: center;
   /* margin: auto; */
   /* background-color: yellow; */
 
 }
 .main_2 img{
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
 }
+
+.main_2 {
+  position: relative;
+  overflow: hidden;
+  width: 60%;
+  height: auto; 
+  margin: auto;/* Adjust height as needed */
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+}
+
+.slider-images {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: auto; /* Adjust height as needed */
+  transition: transform 1s ease-in-out;
+}
+
+.slider-images img {
+  width: 100%;
+  height: auto; /* Ensure images keep their aspect ratio */
+  flex-shrink: 0;
+}
+.design_gallery {
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.design_gallery p {
+  margin: 5%;
+}
+
+.gallery_cards {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.gallery_card {
+  display: flex;
+  height: 20rem;
+  overflow: hidden; /* To hide overflow during animations */
+  position: relative;
+  margin-bottom: 20px; /* Add some spacing between cards */
+}
+
+.gallery_card_left {
+  width: 100%;
+  margin: 15px;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden; /* Hide overflow for scaling effects */
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery_card_left img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery_card_left img:hover {
+  transform: scale(1.1);
+}
+
+.gallery_card_left h3 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateY(20px);
+}
+
+.gallery_card_left:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery_card_left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery_card_left:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .gallery_cards {
+    width: 100%;
+  }
+  /* .slider-images img{
+    width: 100%;
+  } */
+
+  .gallery_card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .gallery_card_left {
+    margin: 10px 0;
+  }
+}
+
 .notice {
   position: absolute;
   top: 15%; 
@@ -179,13 +711,29 @@
   margin: 10% auto;
 }
 
+.service_btn{
+  background-color: black;
+  border-radius: 10px;
+  margin: 5% auto;
+  padding: 10px;
+  color: white;
+}
+.service_btn a{
+  color: white;
+  text-decoration: none;
+}
+.service_btn a:hover{
+  color: #f7f7f7;
+  transform: scale(1.1);
+  }
 .main_service h1{
   
   display: flex;
   justify-content: center; 
 }
 .main_service p{
-  color: red;
+  margin: 5%;
+  color: blue;
   font-weight: bold;  
   display: flex;
   justify-content: center; 
@@ -195,7 +743,7 @@
 .elementor-divider-separator {
   display: flex;
   justify-content: center;
-  margin: 40px 0;
+  margin: 20px auto;
 }
 
 .elementor-divider-separator-line {
@@ -218,29 +766,118 @@
 /* end separotor*/
 
 
-.service{
+/* .service{
   width: 100%;
-  /* background: green; */
   margin: auto;
+} */
+
+/*  service section  */
+.service {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.seperate_service {
+  position: relative;
+  margin: 10% auto;
+}
+
+.service_slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.service_images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  will-change: transform;
+}
+
+.service_images img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  min-width: 100%;
+}
+
+button.prev,
+button.next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pagination span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color: #717171;
+}
+
+
+
+/*card button */
+.card .btn{
+  opacity: 1;;
+}
+.card .btn a{
+  color: white;
+  text-decoration: none;
 }
 .btn{
   padding: 10px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   border-radius: 10px;
   color: white;
-  background: grey;
+  background: black;
   font-weight: bold;
 }
 .btn:hover{
   transform: scale(1.1);
 }
-.cards{
-  display: flex;
-}
+/* .cards{
+  /* display: flex; */
+  /* width: 100%;
+  margin: auto; */
+/* }  */
 .card{
-  width: 30%;
+  width: 60%;
   /* height: 200px; */
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
   border: 2px solid #ccc;
   box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
@@ -302,6 +939,12 @@
 }
 .animated li{
   list-style: none;
+}
+@media screen and (max-width:375px)
+{
+  /* .main_service{
+    margin: 35%;
+  } */
 }
 .experience {
   width: 80%;
@@ -964,7 +1607,9 @@ button[type="submit"]:hover {
     font-size: 15px;
   }
   .get_started{
-    margin: 5px;
+    /* margin: 5px; */
+    position: absolute;
+    bottom: 5px;
   }
   .cards{
     flex-direction: column ;
@@ -996,7 +1641,7 @@ button[type="submit"]:hover {
     width: 100%;
   }
   .main_2 img{
-    width: 85%;
+    width: 100%;
     display: flex;
     margin: auto;
   }
@@ -1019,9 +1664,9 @@ button[type="submit"]:hover {
 }
 
 @media (max-width:510px){
- .main_service{
+ /* .main_service{
   margin: 20% auto 10% auto;
- }
+ } */
  .notice p,.notice li{
   font-size: 10px;
  }
