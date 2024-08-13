@@ -491,9 +491,9 @@
 .main_content{
   position: relative;
 }
-.main_bg {
+/* .main_bg {
   height: 45rem;
-}
+} */
   .main_bg img{
     width: 100%;
     opacity: 0.9;
@@ -526,10 +526,14 @@
     margin: 5% auto;
     color: white;
     }
+    .get_started a{
+      text-decoration: none;
+    color: white;
+    }
     .get_started:hover{
       background: #ff8c8c;
       transition: 0.5s;
-      transform: scale(1.2);
+      transform: scale(1.1);
       cursor: pointer;
       }
 .main_2_h1{
@@ -543,6 +547,7 @@
   font-weight: bold;
   float: inline-start;
   margin: 20px;
+  text-align: center;
 }
 .main_2{
   position: relative;
@@ -714,7 +719,7 @@
 .service_btn{
   background-color: black;
   border-radius: 10px;
-  margin: 5% auto;
+  /* margin: 5% auto; */
   padding: 10px;
   color: white;
 }
@@ -737,6 +742,7 @@
   font-weight: bold;  
   display: flex;
   justify-content: center; 
+  text-align: justify;
 }
 
 /* Elementor seperator*/
@@ -783,7 +789,7 @@
 
 .seperate_service {
   position: relative;
-  margin: 10% auto;
+  margin: 5% auto;
 }
 
 .service_slider {
@@ -1114,10 +1120,15 @@ footer ul li a:hover {
   }
   .get_started{
     margin: 10% auto;
+    padding: 5px;
+    transform: scale(0.9);
   }
 
   h2, h3 {
       font-size: 16px;
+  }
+  .main_2_h1 p{
+    font-size: 15px;
   }
 }
 
@@ -1148,7 +1159,7 @@ footer ul li a:hover {
   width: 25%;
     border: 2px solid black;
     margin: 10px;
-    color: brown;
+    color: blue;
     box-shadow: 3px 5px 5px 4px grey;
     border-radius: 10%;
 }
@@ -1182,11 +1193,12 @@ footer ul li a:hover {
 }
 .top-process p{
   margin: 5%;
+  text-align: justify;
 }
 .book button{
   /* width: 80%; */
   font-size: 20px;
-    background: #a06767;
+    background: black;
     color: white;
     font-weight: bold;
     border-radius: 8px;
@@ -1500,14 +1512,14 @@ button[type="submit"]:hover {
   color: black;
   background: rgb(220, 215, 215);
   text-align: center;
-  padding: 5rem 1rem;
+  padding: 5% 2%;
   position: relative;
   overflow: hidden;
 }
 
-/* .services-hero img{
+.services-hero img{
   width: 100%;
-} */
+}
 .hero-content {
   position: relative;
   z-index: 1;
@@ -1608,9 +1620,11 @@ button[type="submit"]:hover {
   }
   .get_started{
     /* margin: 5px; */
-    position: absolute;
-    bottom: 5px;
+    position: relative;
+    bottom: 0;
+    left: 0;
   }
+ 
   .cards{
     flex-direction: column ;
   }
@@ -1622,6 +1636,12 @@ button[type="submit"]:hover {
   }
   .exp-card p{
     font-size: 10px;
+  }
+  .hero-content p{
+    font-size: 1rem;
+  }
+  .hero-content h1{
+    font-size: 2rem;
   }
   
 }
@@ -1637,6 +1657,7 @@ button[type="submit"]:hover {
     font-size: 15px;
     right: 10px;
   }
+  
   .main_2{
     width: 100%;
   }
