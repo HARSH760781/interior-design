@@ -34,14 +34,26 @@ app.get("/electric-work", (req, res) => {
 app.get("/plumbing", (req, res) => {
   res.render("plumbing");
 });
+app.get("/bedroom", (req, res) => {
+  res.render("bedroom");
+});
 app.get("/gypsum-ceiling", (req, res) => {
   res.render("gypsum-ceiling");
 });
 app.get("/painting", (req, res) => {
   res.render("painting");
 });
-app.get("/flloring", (req, res) => {
+app.get("/floring", (req, res) => {
   res.render("flooring");
+});
+app.get("/living-room", (req, res) => {
+  res.render("living-room");
+});
+app.get("/bathroom", (req, res) => {
+  res.render("bathroom");
+});
+app.get("/pooja", (req, res) => {
+  res.render("pooja-room");
 });
 app.get("/curtains", (req, res) => {
   res.render("curtains");
@@ -54,6 +66,9 @@ app.get("/interior-desing", (req, res) => {
 });
 app.get("/Pages", (req, res) => {
   res.render("Page");
+});
+app.get("/interior-design", (req, res) => {
+  res.render("interior-design");
 });
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
