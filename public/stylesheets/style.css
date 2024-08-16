@@ -344,7 +344,7 @@
  header{
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 10px auto;
   width: 90%;
   height: 15vh;
  }
@@ -668,13 +668,14 @@
   opacity: 1;
 }
 
+
 @media (max-width: 768px) {
   .gallery_cards {
     width: 100%;
   }
-  /* .slider-images img{
-    width: 100%;
-  } */
+  .service_slider{
+    height: 90vh;
+  }
 
   .gallery_card {
     flex-direction: column;
@@ -738,7 +739,7 @@
 }
 .main_service p{
   margin: 5%;
-  color: blue;
+  color: black;
   font-weight: bold;  
   display: flex;
   justify-content: center; 
@@ -793,6 +794,7 @@
 }
 
 .service_slider {
+  /* height: 50vh; */
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -986,9 +988,11 @@ button.next {
 .exp-card p{
   font-weight: bold;
   display: flex;
+  text-align: center;
   justify-content: center;
   margin: auto;  
   font-size: 30px;
+  color: black;
 }
 .exp-card img{
   width: 50%;
@@ -1194,6 +1198,8 @@ footer ul li a:hover {
 .top-process p{
   margin: 5%;
   text-align: justify;
+  color: black;
+  font-weight: normal;
 }
 .book button{
   /* width: 80%; */
@@ -1311,6 +1317,10 @@ footer ul li a:hover {
   font-size: 1em;
   color: #555;
 }
+.faq-answer p{
+  color: black;
+  font-weight: normal;
+}
 
 .toggle-icon {
   font-size: 1.5em;
@@ -1325,7 +1335,7 @@ footer ul li a:hover {
   background-position: center;
   color: #100101;
   text-align: center;
-  padding: 5rem 1rem;
+  /* padding: 5rem 1rem; */
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -1353,6 +1363,9 @@ footer ul li a:hover {
   padding: 1rem;
 }
 
+.container h1{
+  margin: 10px;
+}
 .about-content h2 {
   font-size: 2rem;
   margin-top: 2rem;
@@ -1398,7 +1411,7 @@ footer ul li a:hover {
   background-position: center;
   color: black;
   text-align: center;
-  padding: 5rem 1rem;
+  /* padding: 5rem 1rem; */
   position: relative;
   overflow: hidden;
 }
@@ -1726,5 +1739,27 @@ button[type="submit"]:hover {
   .img img{
     width: 90%;
     margin: 5% auto;
+  }
+  .service_slider{
+    height: 50vh;
+  }
+}
+
+
+@media (min-width:550px)
+{
+  .service_slider{
+    height: 70vh;
+    width: 70%;
+    margin: auto;
+  }
+  .main_service p{
+    margin: 10px;
+  }
+  .portfolio .elementor-divider-separator{
+    justify-content: center;
+  }
+  .above_exp .elementor-divider-separator{
+    justify-content: center;
   }
 }

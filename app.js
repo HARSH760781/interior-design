@@ -34,6 +34,9 @@ app.get("/electric-work", (req, res) => {
 app.get("/plumbing", (req, res) => {
   res.render("plumbing");
 });
+app.get("/wooden-work", (req, res) => {
+  res.render("wooden-work");
+});
 app.get("/bedroom", (req, res) => {
   res.render("bedroom");
 });
@@ -43,7 +46,7 @@ app.get("/gypsum-ceiling", (req, res) => {
 app.get("/painting", (req, res) => {
   res.render("painting");
 });
-app.get("/floring", (req, res) => {
+app.get("/flooring", (req, res) => {
   res.render("flooring");
 });
 app.get("/living-room", (req, res) => {
