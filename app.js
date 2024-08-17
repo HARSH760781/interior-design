@@ -3,6 +3,7 @@ const hbs = require("hbs");
 const path = require("path");
 const mongoose = require("mongoose");
 const toastr = require("toastr");
+const nodemailer = require("nodemailer");
 const app = express();
 
 const port = 3000;
@@ -16,7 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 mongoose
-  .connect("mongodb://localhost:27017/contact")
+  .connect(
+    "mongodb+srv://hj760781:12345yuiop@cluster0.gwbmhie.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  )
   .then(() => console.log("Database connected!!!"))
   .catch((err) => console.log(err));
 
@@ -106,6 +109,15 @@ app.get("/interior-design", (req, res) => {
 app.get("/success", (req, res) => {
   res.render("success");
 });
+
+const transporter = nodemailer.createTransport({
+  service: "Gmail", // You can use other services like 'Yahoo', 'Outlook', etc.
+  auth: {
+    user: "hjais2009@gmail.com", // Your email address
+    pass: "jsfq kgsc xtjt dpri", // Your email password or app password
+  },
+});
+
 app.post("/form-submit", async (req, res) => {
   try {
     const { name, email, phone, message } = req.body;
@@ -124,15 +136,26 @@ app.post("/form-submit", async (req, res) => {
     });
 
     await formData.save();
-    res.redirect("/success");
+
+    const mailOptions = {
+      from: "oracleeinfra@gmail.com", // Sender address
+      to: email,
+      subject: "Welcome to Orclee Infra Company ⭐", // Subject line
+      text: `Dear ${name},\n\nThank you for reaching out to us. We have received your message and will get back to you soon.\n\nMessage: ${message}\n\nBest regards,\n Orclee Infra `, // Plain text body
+      // You can also use 'html' property to send an HTML email
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log(error);
+        return res.status(500).json({ message: "Failed to send email." });
+      } else {
+        res.redirect("/success");
+        console.log("Email sent: " + info.response);
+      }
+    });
   } catch (error) {
     console.log(error);
-
-    // Send an error response
-    // res.status(500).json({
-    //   message:
-    //     "An error occurred while sending your message. Please try again.",
-    // });
     res.redirect("/error");
   }
 });

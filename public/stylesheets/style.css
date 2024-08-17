@@ -951,12 +951,6 @@ button.next {
 .animated li{
   list-style: none;
 }
-@media screen and (max-width:375px)
-{
-  /* .main_service{
-    margin: 35%;
-  } */
-}
 .experience {
   width: 80%;
   margin: 5% auto;
@@ -986,7 +980,7 @@ button.next {
   box-shadow: 2px 5px 10px 5px rgb(120, 109, 109);
   margin: 2% ;
   padding: 5%;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 .exp-card p{
   font-weight: bold;
@@ -1168,7 +1162,7 @@ footer ul li a:hover {
     margin: 10px;
     color: blue;
     box-shadow: 3px 5px 5px 4px grey;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 .process-card-image{
   margin: 5%;
@@ -1214,6 +1208,10 @@ footer ul li a:hover {
     text-align: center;
     margin: 5px auto;
     padding: 10px;
+}
+.book button a{
+ text-decoration: none;
+ color: white; 
 }
 .book{
   width: 100%;
@@ -1805,5 +1803,16 @@ button[type="submit"]:hover {
   }
   .above_exp .elementor-divider-separator{
     justify-content: center;
+  }
+}
+@media  (max-width:600px)
+{
+  .process-cards{
+    flex-direction: column;
+  }
+  .process-card{
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 10px;
   }
 }
