@@ -203,3 +203,62 @@ function toggleMenu() {
     });
   }
 }
+
+app.post("/form-submit", async (req, res) => {
+  try {
+    console.log(req.body); // Log the data to inspect it
+
+    const { name, email, phone, message } = req.body;
+
+    // Validation
+    if (!name || !email || !phone || !message) {
+      return res.status(400).json({ message: "All fields are required." });
+    }
+
+    // Save the data to the database
+    const formData = new User({
+      name,
+      email,
+      phone,
+      message,
+    });
+
+    await formData.save();
+    res
+      .status(200)
+      .json({ message: "Your message has been sent successfully!" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      message:
+        "An error occurred while sending your message. Please try again.",
+    });
+  }
+});
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const formData = new FormData(this);
+
+    fetch(this.action, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          toastr.success(data.message);
+        } else {
+          toastr.error(data.message);
+        }
+        this.reset(); // Reset the form after submission
+      })
+      .catch((error) => {
+        toastr.error(
+          "An error occurred while sending your message. Please try again."
+        );
+      });
+  });

@@ -792,9 +792,12 @@
   position: relative;
   margin: 5% auto;
 }
+.seperate_service h2{
+  color: blue;
+}
 
 .service_slider {
-  /* height: 50vh; */
+  height: 50vh;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -1404,6 +1407,37 @@ footer ul li a:hover {
 }
 /* ********Contact ************** */
 
+.notification {
+  display: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+.success,.error{
+  width: 10%;
+}
+.heading{
+  font-size: medium;
+}
+.notification.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.notification.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.notification.hidden {
+  display: none;
+}
+
 
 .contact-hero {
   background-image: url('/images/contact-hero.jpg');
@@ -1423,6 +1457,7 @@ footer ul li a:hover {
   position: relative;
   z-index: 1;
 }
+
 
 .hero-content h1 {
   font-size: 3rem;
@@ -1591,6 +1626,15 @@ button[type="submit"]:hover {
   font-size: 1rem;
   line-height: 1.6;
 }
+@media (max-width:500px)
+{
+  .service-content p{
+    font-size: 12px;
+  }
+  .service-content h2{
+    font-size: 1.2rem;
+  }
+}
 @media (max-width:1024px){
   .notice{
     padding: 0;
@@ -1749,7 +1793,7 @@ button[type="submit"]:hover {
 @media (min-width:550px)
 {
   .service_slider{
-    height: 70vh;
+    height: 60vh;
     width: 70%;
     margin: auto;
   }
