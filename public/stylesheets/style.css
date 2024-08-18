@@ -1802,16 +1802,6 @@ button[type="submit"]:hover {
     height: 50vh;
   } */
 }
-
-
-@media (min-width:550px){
-  .service_slider{
-    height: 60vh;
-  }
-  .main_content{
-    height: 70vh;
-  }
-}
 @media (min-width:550px)
 {
   .service_slider{
@@ -1829,6 +1819,85 @@ button[type="submit"]:hover {
     justify-content: center;
   }
 }
+@media (min-width:1441px)
+{
+  header ul li a{
+    font-size: 40px;
+  }
+  .logo img{
+    width: 60%;
+    max-height: 500px;
+  }
+  .gallery_card{
+    height: 25rem;
+  }
+  .gallery_cards{
+    width: 90%;
+  }
+  .main_content{
+    height: 50vh;
+  }
+  .main_2{
+    width: 100%;
+  }
+  .main_2_h1 p{
+    font-size: 40px;
+    width: 100%;
+  }
+  .design_gallery h1{
+    font-size: 50px;
+  }
+  .design_gallery p{
+    font-size: 40px;
+  }
+  .main_service{
+    font-size: 30px;
+  }
+  .service_btn{
+    width: 10%;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .experience p{
+    font-size: 30px;
+  }
+  .process-cards p,.process-cards h2{
+    font-size: 30px;
+  }
+  .service_slider {
+    width: 90%;
+  }
+  .book button{
+    font-size: 30px;
+    padding: 20px;
+  }
+  .faq-section{
+    font-size: 30px;
+    max-width: none;
+  }
+  .faq-section p{
+    font-size: 30px;
+  }
+  footer p{
+    font-size: 30px;
+  }
+  footer h2,footer h3 , footer ul li a{
+    font-size: 40px;
+  }
+  .footer-logo{
+    max-width: none;
+  }
+
+}
+@media (min-width:550px)  and  (max-width:1440px){
+  .service_slider{
+    height: 60vh;
+  }
+  .main_content{
+    height: 70vh;
+  }
+}
+
 @media  (max-width:600px)
 {
   .process-cards{
