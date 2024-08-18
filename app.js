@@ -141,7 +141,7 @@ app.post("/form-submit", async (req, res) => {
       from: "oracleeinfra@gmail.com", // Sender address
       to: email,
       subject: "Welcome to Orclee Infra Company ⭐", // Subject line
-      text: `Dear ${name},\n\nThank you for reaching out to us. We have received your message and will get back to you soon.\n\nMessage: ${message}\n\nBest regards,\n Orclee Infra `, // Plain text body
+      text: `Dear ${name},\n\nThank you for reaching out to us. We have received your message and will get back to you soon.\n\nPhone: ${phone}\n\nMessage: ${message}\n\nBest regards,\n Orclee Infra `, // Plain text body
       // You can also use 'html' property to send an HTML email
     };
 
