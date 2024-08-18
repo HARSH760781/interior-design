@@ -117,7 +117,6 @@ const transporter = nodemailer.createTransport({
     pass: "jsfq kgsc xtjt dpri", // Your email password or app password
   },
 });
-
 app.post("/form-submit", async (req, res) => {
   try {
     const { name, email, phone, message } = req.body;
@@ -135,28 +134,34 @@ app.post("/form-submit", async (req, res) => {
       message,
     });
 
-    await formData.save();
+    try {
+      await formData.save(); // Save data to MongoDB
+    } catch (dbError) {
+      console.error("Database save error:", dbError);
+      return res.status(500).redirect("/error");
+    }
 
+    // Set up email options
     const mailOptions = {
       from: "oracleeinfra@gmail.com", // Sender address
-      to: email,
+      to: email, // Receiver's email
       subject: "Welcome to Orclee Infra Company ⭐", // Subject line
-      text: `Dear ${name},\n\nThank you for reaching out to us. We have received your message and will get back to you soon.\n\nPhone: ${phone}\n\nMessage: ${message}\n\nBest regards,\n Orclee Infra `, // Plain text body
-      // You can also use 'html' property to send an HTML email
+      text: `Dear ${name},\n\nThank you for reaching out to us. We have received your message and will get back to you soon.\n\nPhone: ${phone}\n\nMessage: ${message}\n\nBest regards,\nOrclee Infra`, // Plain text body
     };
 
+    // Send the email
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        console.log(error);
-        return res.status(500).json({ message: "Failed to send email." });
+        console.error("Email sending error:", error);
+        return res.status(500).redirect("/error");
       } else {
-        res.redirect("/success");
         console.log("Email sent: " + info.response);
+        return res.status(200).redirect("/success"); // Redirect to success page
       }
     });
   } catch (error) {
-    console.log(error);
-    res.redirect("/error");
+    console.error("Form submission error:", error);
+    return res.status(500).redirect("/error"); // Redirect to error page if there's an error during processing
   }
 });
 
