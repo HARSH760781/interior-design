@@ -100,6 +100,12 @@ app.get("/electronic-products", (req, res) => {
 app.get("/interior-desing", (req, res) => {
   res.render("interior-design");
 });
+app.get("/exterior-elevation", (req, res) => {
+  res.render("exterior");
+});
+app.get("/panelling", (req, res) => {
+  res.render("panelling");
+});
 app.get("/Pages", (req, res) => {
   res.render("Page");
 });
