@@ -1593,7 +1593,7 @@ button[type="submit"]:hover {
 }
 
 .services-hero img{
-  width: 100%;
+  width: 65%;
 }
 .hero-content {
   position: relative;
@@ -1615,6 +1615,11 @@ button[type="submit"]:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-list {
@@ -1623,6 +1628,7 @@ button[type="submit"]:hover {
   gap: 2rem;
   padding: 2rem 1rem;
 }
+
 
 .service-item {
   display: flex;
